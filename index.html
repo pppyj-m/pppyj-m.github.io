@@ -101,7 +101,14 @@
 <li>注意：首先要  ‘chmod +x ./test.sh’ #赋予执行权限 接着  ‘./test.sh’执行</li>
 </ol>
 <hr>
-<h2 id="开始实战！"><a href="#开始实战！" class="headerlink" title="开始实战！"></a>开始实战！</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<h2 id="开始实战！"><a href="#开始实战！" class="headerlink" title="开始实战！"></a>开始实战！</h2><h2 id="第二章-sort-file-option"><a href="#第二章-sort-file-option" class="headerlink" title="第二章 sort[file] [option]"></a>第二章 sort[file] [option]</h2><p>sort命令可对‘文件内容’进行排序<br>常用的option为：<br>-r : 逆序输出<br>-t : 指定分隔符<br>-k : 排序的键，如 -k2 按第二位排序<br>-n : 按数值大小排序，不然的话可能 10 会比 2 更小，因为按照首字母比较<br>-u : 去重，功能同 uniq，但它是全文本去重</p>
+<p>实用举例：1.全文去重<br>对于一个文本文件 #/usr/games/shell_practice/去重<br>aaa<br>bbbbb<br>ccccc<br>123<br>aaaaa<br>123<br>bbb<br>aaa</p>
+<p>$sort <file> -u #这种会将文本进行进行排序之后去重等同于下面命令<br>$sort <file> |uniq #‘|’代表管道符号会将第一个命令后的结果给后面并执行<br>$awk   #课后题：使用awk进行去重？达到不破坏顺序的目的</p>
+<ol start="2">
+<li>部分去重</li>
+</ol>
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://windard.com/opinion/2017/04/18/Linux-Shell">https://windard.com/opinion/2017/04/18/Linux-Shell</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-shell-process-control.html">https://www.runoob.com/linux/linux-shell-process-control.html</a></li>
 <li></li>
@@ -110,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/23/shell%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cklhrc54z00018odo3luh6fin" data-title="shell脚本学习笔记" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/23/shell%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cklht3xn40001c1do6j7u0y52" data-title="shell脚本学习笔记" class="article-share-link">Share</a>
       
       
       
@@ -152,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/22/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cklhrc55600048odo13hi8a7x" data-title="如何搭建博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/22/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cklht3xn60002c1dofh0ffpwh" data-title="如何搭建博客" class="article-share-link">Share</a>
       
       
       
@@ -203,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/22/hello-world/" data-id="cklhrc54u00008odo1vy8g73h" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/02/22/hello-world/" data-id="cklht3xmz0000c1do1va08h8v" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
